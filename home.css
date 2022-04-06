@@ -1,0 +1,140 @@
+
+hr {
+   margin-top: 40px; 
+   margin-bottom: 50px; 
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{text-decoration: underline;}
+
+.flexbox{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.bannerimg {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.animate{
+    background-image:url("Images/bannerimg.png");
+    height: 600px;
+    animation: a1 15s 3s reverse infinite;
+}
+
+@keyframes a1{
+    0%{background-image:url("Images/banner5.jpg");}
+    20%{background-image:url("imgs/3.jpg");}
+    40%{background-image:url("Images/banner4.jpg");}
+    60%{background-image:url("imgs/5.jpg");}
+    80%{background-image:url("imgs/2.jpg");}
+    100%{background-image:url("imgs/1.jpg");}
+}
+
+.heading {
+    color:midnightblue;
+    font-family:cursive;
+    font-size: 3em;
+    text-align: center;
+}
+
+summary {
+    font-family:fantasy;
+    font-size: 2em;
+    text-align: left;
+}
+
+.blockquote {
+    color: midnightblue;
+    font-family: cursive;
+    font-size: 3em;
+}
+
+.blockquote-footer{
+    font-size: 2em;
+}
+
+.para {
+    font-family: 'Birthstone', cursive;
+    font-size: 2em;
+    color: black;
+    font-style: bold;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.smallimgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ 
+.smallimg {
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    border:2px solid white;
+    margin-left: 30px;
+}
+
+form {
+    padding: 30px;
+    border: 1px solid midnightblue;
+    border-radius: 50px;
+    width: 50%;
+    margin-left: 320px;
+    background-color: aliceblue;
+}
+
+details{
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+span {
+    color: navy;
+}
+
+.cite {
+    animation-name: citeani;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes citeani {
+    0%{color: black;}
+    50%{color: midnightblue;}
+    100%{color: violet;}
+}
+
+h4 {
+    color: gray;
+    font-family: 'Birthstone', cursive;
+}
+
+#blockcontainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.blockdiv {
+    width: 350px;
+    height: 250px;
+    border: 3px solid black;
+    margin: 10px;
+    border-radius: 40px;
+    background-color:aliceblue;
+}
+
